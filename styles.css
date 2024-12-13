@@ -1,0 +1,551 @@
+
+body {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#services .bi {
+    font-size: 3rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 10px;
+    }
+
+    #services .bi {
+        font-size: 2rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
+
+.expertise-card {
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.expertise-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+#services .bi {
+    font-size: 3rem;
+}
+#plm-services img {
+    max-height: 400px;
+    object-fit: cover;
+}
+.vh-50 {
+    height: 50vh; /* 50% of the viewport height */
+}
+
+/* General Styling */
+#plm-services {
+    overflow: hidden;
+    position: relative;
+}
+
+#plm-services h2 span {
+    color: #007bff; /* Bootstrap primary color */
+    font-weight: bold;
+}
+
+#plm-services ul li {
+    font-size: 1.2rem;
+}
+
+/* Animations and Transitions */
+.gear-icon {
+    font-size: 10rem;
+    opacity: 0.1;
+    top: -50px;
+    left: -50px;
+    z-index: 0;
+}
+
+.diagram-icon {
+    font-size: 8rem;
+    opacity: 0.1;
+    bottom: -50px;
+    right: -50px;
+    z-index: 0;
+}
+
+/* Animation Library Integration */
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate__delay-1s {
+    animation-delay: 1s;
+}
+
+.animate__delay-2s {
+    animation-delay: 2s;
+}
+
+.animate__delay-3s {
+    animation-delay: 3s;
+}
+.whos-speaking-area .speakers {
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+}
+.whos-speaking-area .speakers:hover {
+    -webkit-box-shadow: 0 0 6px 5px #ddd;
+    box-shadow: 0 0 6px 5px #ddd;
+    border-radius: 6px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    border: 1px solid #dee2e6;
+}
+.whos-speaking-area .speakers .spk-img {
+    position: relative;
+}
+.whos-speaking-area .speakers .spk-img:before {
+    background: rgba(91, 69, 213, 0.8);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    z-index: 5;
+}
+.whos-speaking-area .speakers .spk-img:hover:before {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.whos-speaking-area .speakers .spk-img img {
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.whos-speaking-area .speakers .spk-img ul {
+    position: absolute;
+    display: inline-block;
+    top: 35%;
+    left: 40%;
+    width: 100px;
+    line-height: 3;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.whos-speaking-area .speakers .spk-img ul:before {
+    position: absolute;
+    content: "";
+    height: 110px;
+    width: 110px;
+    background: transparent;
+    top: -15%;
+    left: -15px;
+    border: 1px solid #fff;
+    -webkit-transform: rotate(44deg) scale(1.4);
+    -ms-transform: rotate(44deg) scale(1.4);
+    transform: rotate(44deg) scale(1.4);
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.whos-speaking-area .speakers .spk-img ul li {
+    display: inline-block;
+    margin: 0 3px;
+    -webkit-transform: perspective(50px) rotatey(80deg);
+    transform: perspective(50px) rotatey(80deg);
+    -webkit-transition: all 0.5s ease 0.2s;
+    -o-transition: all 0.5s ease 0.2s;
+    transition: all 0.5s ease 0.2s;
+    margin: 0 5px;
+}
+.whos-speaking-area .speakers .spk-img ul li a i.fa {
+    color: rgba(255, 78, 0, 0.8);
+    font-size: 18px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    width: 28px;
+    color: #fff;
+    height: 28px;
+    line-height: 21px;
+    text-align: center;
+}
+.whos-speaking-area .speakers .spk-img ul li a i.fa:hover {
+    color: #cf057c;
+}
+.whos-speaking-area .speakers .spk-img ul li:nth-child(1) {
+    -webkit-transform: translate3d(-53px, -50px, 0);
+    transform: translate3d(-53px, -50px, 0);
+}
+.whos-speaking-area .speakers .spk-img ul li:nth-child(2) {
+    -webkit-transform: translate3d(53px, -50px, 0);
+    transform: translate3d(53px, -50px, 0);
+}
+.whos-speaking-area .speakers .spk-img ul li:nth-child(3) {
+    -webkit-transform: translate3d(-53px, 50px, 0);
+    transform: translate3d(-53px, 50px, 0);
+}
+.whos-speaking-area .speakers .spk-img ul li:nth-child(4) {
+    -webkit-transform: translate3d(53px, 50px, 0);
+    transform: translate3d(53px, 50px, 0);
+}
+.whos-speaking-area .speakers .spk-img:hover ul {
+    left: 35%;
+    opacity: 1;
+    z-index: 9;
+}
+.whos-speaking-area .speakers .spk-img:hover ul:before {
+    opacity: 1;
+    -webkit-transform: rotate(44deg) scale(1);
+    -ms-transform: rotate(44deg) scale(1);
+    transform: rotate(44deg) scale(1);
+}
+.whos-speaking-area .speakers .spk-img:hover ul li:nth-child(1),
+.whos-speaking-area .speakers .spk-img:hover ul li:nth-child(2),
+.whos-speaking-area .speakers .spk-img:hover ul li:nth-child(3),
+.whos-speaking-area .speakers .spk-img:hover ul li:nth-child(4) {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.whos-speaking-area .speakers .spk-info {
+    text-align: center;
+    padding: 30px 0;
+}
+.whos-speaking-area .speakers .spk-info h3 {
+    color: #252525;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    text-transform: capitalize;
+}
+.whos-speaking-area .speakers .spk-info h3:hover {
+    color: #4125dd;
+}
+.whos-speaking-area .speakers .spk-info p {
+    font-size: 15px;
+    margin-bottom: 0;
+    color: #656565;
+}
+
+.whos-speaking-area-two .title-text h2 {
+    color: #fff;
+}
+
+.whos-speaking-area-two .speakers {
+    position: relative;
+    overflow: hidden;
+}
+.whos-speaking-area-two .speakers:hover img {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+}
+.whos-speaking-area-two .speakers img {
+    position: relative;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    -webkit-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+}
+.whos-speaking-area-two .speakers .img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: rgba(91, 69, 213, 0.9);
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.whos-speaking-area-two .speakers:hover .img-overlay {
+    opacity: 1;
+}
+.whos-speaking-area-two .speakers .name a {
+    position: absolute;
+    bottom: -20%;
+    left: 10%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.whos-speaking-area-two .speakers .name a:hover {
+    color: #cf057c;
+}
+.whos-speaking-area-two .speakers:hover .name a {
+    bottom: 10%;
+}
+.whos-speaking-area-two .speakers .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 23%;
+    left: 0;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.whos-speaking-area-two .speakers .social-icons li {
+    margin-right: 10px;
+}
+.whos-speaking-area-two .speakers .social-icons li a {
+    color: #fff;
+}
+.whos-speaking-area-two .speakers .social-icons li a:hover {
+    color: #252525;
+}
+.whos-speaking-area-two .speakers:hover .social-icons {
+    left: 27px;
+}
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+.mb50 {
+    margin-bottom: 50px;
+}
+
+.section-divider {
+    position: relative;
+    text-align: center;
+    margin: 0; /* Ensure no extra space around the divider */
+    background-color: inherit; /* Matches the background of the section */
+}
+
+.animated-hr {
+    border: none;
+    height: 3px;
+    width: 80%; /* Adjust the width of the divider */
+    margin: 0 auto;
+    background: linear-gradient(90deg, rgba(0,123,255,1) 0%, rgba(255,255,255,0) 50%, rgba(0,123,255,1) 100%);
+    background-size: 300% 100%; /* Extend background size for a smoother effect */
+    animation: gradient-slide 5s infinite ease-in-out; /* Smooth, continuous animation */
+}
+
+/* Keyframes for smoother gradient movement */
+@keyframes gradient-slide {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#plm-image {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+#plm-image.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.footer {
+    background-color: #212529; /* Dark background */
+    color: #ccc; /* Light text color */
+}
+
+.footer h4, .footer h5 {
+    color: #ffffff; /* Bright white for headings */
+}
+
+.footer a {
+    color: #bbb; /* Slightly lighter color for links */
+    transition: color 0.2s ease-in-out;
+}
+
+.footer a:hover {
+    color: #ffffff; /* Change to white on hover */
+}
+
+.footer .social-icons a {
+    font-size: 1.5rem;
+}
+
+.footer .social-icons a:hover {
+    color: #0d6efd; /* Highlight with Bootstrap primary color */
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+/* Card hover animation */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lifts the card slightly */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adds a more prominent shadow */
+}
+
+/* Read More link styling */
+.card a {
+    color: #007bff; /* Primary theme color */
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.card a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #007bff; /* Matches link color */
+    transition: width 0.3s ease;
+}
+
+.card a:hover {
+    color: #0056b3; /* Darker shade of the theme color */
+}
+
+.card a:hover::after {
+    width: 100%; /* Expands underline on hover */
+}
+/* Vertical Divider */
+.vertical-divider {
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #007bff, #0056b3); /* Gradient divider */
+    border-radius: 1px;
+}
+
+/* Optional - Styling for Contact Form */
+#contact-us form .form-control {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+}
+
+#contact-us form .btn {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+#contact-us form .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .vertical-divider {
+        display: none; /* Hide the divider on small screens */
+    }
+}
+
+#testimonials {
+    background-color: #f8f9fa;
+}
+
+#testimonials img {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#testimonials blockquote {
+    font-style: italic;
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Custom Arrow Styles */
+.carousel-arrow {
+    font-size: 2rem; /* Larger arrow size */
+    font-weight: bold;
+    color: #007bff; /* Matches the theme */
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.carousel-arrow:hover {
+    color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.2); /* Slightly enlarges the arrow */
+}
+
+.carousel-arrow:active {
+    transform: scale(1.1) translateY(2px); /* Subtle click animation */
+}
+
+/* Positioning */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px; /* Reduces control width */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: none; /* Hides default Bootstrap icons */
+}
+
+.carousel-control-prev .prev-icon {
+    position: absolute;
+    left: -10px; /* Adjust left arrow position */
+}
+
+.carousel-control-next .next-icon {
+    position: absolute;
+    right: -10px; /* Adjust right arrow position */
+}
+

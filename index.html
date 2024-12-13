@@ -1,0 +1,657 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altegra Consulting AB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Altegra Consulting AB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="ms-3">
+                    <select id="languageToggle" class="form-select form-select-sm">
+                        <option value="en">English</option>
+                        <option value="sv">Svenska</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="vh-50">
+    <div id="carouselExample" class="carousel slide vh-50" data-bs-ride="carousel">
+        <div class="carousel-inner h-100">
+            <!-- Slide 1 -->
+            <div class="carousel-item active h-100">
+                <div class="d-flex justify-content-center align-items-center text-white bg-primary h-100">
+                    <div class="text-center">
+                        <h1 id="welcome-title">Welcome to Altegra Consulting AB</h1>
+                        <p id="welcome-text">Empowering Your PLM Solutions</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item h-100">
+                <div class="d-flex justify-content-center align-items-center text-white bg-success h-100">
+                    <div class="text-center">
+                        <h1>Innovating Your Business</h1>
+                        <p>Expert solutions for seamless PLM integration</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item h-100">
+                <div class="d-flex justify-content-center align-items-center text-white bg-danger h-100">
+                    <div class="text-center">
+                        <h1>Future-Ready PLM</h1>
+                        <p>Driving your success with cutting-edge solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</header>
+
+</header>
+
+<section id="plm-services" class="py-5 bg-white position-relative">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Image Section -->
+            <div class="col-md-6 text-center">
+                <img id="plm-image" src="images/altegraLogo_4f-99x300.png" alt="PLM Solutions" class="img-fluid">
+            </div>
+            <!-- Text Section -->
+            <div class="col-md-6">
+                <h2 class="mb-4" style="font-weight: bold; font-size: 2.5rem;">
+                    <span class="text-primary">Your Partner</span> in PLM Excellence
+                </h2>
+                <p class="lead text-muted">
+                    Altegra Consulting excels in providing tailored solutions for Product Lifecycle Management (PLM), helping businesses optimize operations and achieve success. Our services include:
+                </p>
+                <p>
+                    Specification, customization, and implementation of PLM systems; seamless integration with adjacent platforms like CAD/CAE environments; efficient migration of data between PLM systems; system upgrades to maintain technological relevance; and expert management of installed solutions. Let us empower your business with innovative and future-ready PLM strategies.
+                </p>
+                <a href="#contact" class="btn btn-primary btn-lg mt-4">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <div class="background-decor">
+        <i class="bi bi-gear-fill text-primary position-absolute gear-icon"></i>
+        <i class="bi bi-diagram-3-fill text-success position-absolute diagram-icon"></i>
+    </div>
+</section>
+
+
+<div class="section-divider">
+    <hr class="animated-hr" />
+</div>
+
+
+<section id="services" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5" id="services-title">Our Expertise</h2>
+        <div class="row g-4">
+            <!-- Block 1 -->
+            <div class="col-md-4">
+                <div class="expertise-card text-center p-4 shadow-sm rounded">
+                    <i class="bi bi-gear-fill display-4 text-primary"></i>
+                    <h4 class="mt-3">Implementation</h4>
+                    <p>Specification, customization, and implementation of PLM solutions tailored to your needs.</p>
+                </div>
+            </div>
+            <!-- Block 2 -->
+            <div class="col-md-4">
+                <div class="expertise-card text-center p-4 shadow-sm rounded">
+                    <i class="bi bi-arrows-angle-contract display-4 text-success"></i>
+                    <h4 class="mt-3">Integration</h4>
+                    <p>Seamless communication with adjacent systems such as CAD/CAE and maintenance platforms.</p>
+                </div>
+            </div>
+            <!-- Block 3 -->
+            <div class="col-md-4">
+                <div class="expertise-card text-center p-4 shadow-sm rounded">
+                    <i class="bi bi-cloud-upload-fill display-4 text-info"></i>
+                    <h4 class="mt-3">Data Migration</h4>
+                    <p>Secure and efficient migration of data from diverse PLM systems or other sources.</p>
+                </div>
+            </div>
+            <!-- Block 4 -->
+            <div class="col-md-4">
+                <div class="expertise-card text-center p-4 shadow-sm rounded">
+                    <i class="bi bi-arrow-repeat display-4 text-warning"></i>
+                    <h4 class="mt-3">Upgrades</h4>
+                    <p>Modernizing and enhancing systems to keep them aligned with your business growth.</p>
+                </div>
+            </div>
+            <!-- Block 5 -->
+            <div class="col-md-4">
+                <div class="expertise-card text-center p-4 shadow-sm rounded">
+                    <i class="bi bi-shield-lock-fill display-4 text-danger"></i>
+                    <h4 class="mt-3">Support</h4>
+                    <p>Comprehensive management and support for installed PLM solutions.</p>
+                </div>
+            </div>
+            <!-- Block 6 -->
+            <div class="col-md-4">
+                <div class="expertise-card text-center p-4 shadow-sm rounded">
+                    <i class="bi bi-lightning-charge-fill display-4 text-secondary"></i>
+                    <h4 class="mt-3">Consulting</h4>
+                    <p>Expert guidance to optimize workflows and strategies tailored to your business goals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider">
+    <hr class="animated-hr" />
+</div>
+
+
+<section id="speakers-section" class="py-5 bg-white">
+<div class="whos-speaking-area speakers pad100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <div class="title-text mb50">
+                         <h2 class="text-center mb-5">Our Team</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- /col end-->
+        </div>
+        <!-- /.row  end-->
+        <div class="row mb50">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                <div class="speakers xs-mb30">
+                    <div class="spk-img">
+                        <img class="img-fluid" src="images/team/Lars_Nydhal.jpg" alt="Lars_Nydhal" />
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-camera"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-life-ring"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="spk-info">
+                        <h3>Lars Nydhal</h3>
+                        <p>Chief Executive Officer</p>
+                        <p>Co-Founder</p>
+						
+                    </div>
+                </div>
+            </div>
+            <!-- /col end-->
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                <div class="speakers xs-mb30">
+                    <div class="spk-img">
+                        <img class="img-fluid" src="images/team/Bjorn_Holstad.jpg" alt="Bjorn_Holstad" />
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-camera"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-life-ring"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="spk-info">
+                        <h3>Björn Holstad</h3>
+                        <p>Chief Operating Officer</p>
+						<p>Co-Founder</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /col end-->
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                <div class="speakers xs-mb30">
+                    <div class="spk-img">
+                        <img class="img-fluid" src="images/team/Sathish_Sathiya.jpg" alt="Sathish_Sathiya" />
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-camera"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-life-ring"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="spk-info">
+                        <h3>Sathish Kumar Sathiya</h3>
+                        <p>Chief Technology Officer</p>
+						<p>Senior PLM Consultant</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /col end-->
+            <div class="col-xl-3 col-lg-3 d-md-none d-lg-block col-sm-12">
+                <div class="speakers">
+                    <div class="spk-img">
+                        <img class="img-fluid" src="images/team/Ulrika_Bjalkeskog.jpg" alt="Ulrika_Bjalkeskog" />
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-camera"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-life-ring"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="spk-info">
+                        <h3>Ulrika Bjälkeskog</h3>
+                        <p>HR Administration</p>
+						<p>Ekonomi</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /col end-->
+        </div>
+        <!-- /row end-->
+        <div class="row">
+            <div class="offset-2 no-gutter"></div>
+            <!-- /col end-->
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                <div class="speakers xs-mb30">
+                    <div class="spk-img">
+                        <img class="img-fluid" src="images/team/Andersson_Jorgen.jpg" alt="Andersson_Jorgen" />
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-camera"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-life-ring"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="spk-info">
+                        <h3>Co-Founder</h3>
+                        <p>Expert PLM Consultant</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /col end-->
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                <div class="speakers xs-mb30">
+                    <div class="spk-img">
+                        <img class="img-fluid" src="images/team/Pontus_Wikander.jpg" alt="Pontus_Wikander" />
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-camera"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-life-ring"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="spk-info">
+                        <h3>Co-Founder</h3>
+                        <p>Expert PLM Consultant</p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                <div class="speakers">
+                    <div class="spk-img">
+                        <img class="img-fluid" src="images/team/Johan_Dalenius_Wollert.jpg" alt="Johan_Dalenius_Wollert" />
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-camera"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-life-ring"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="spk-info">
+                        <h3>Co-Owner</h3>
+                        <p>Expert PLM Consultant</p>
+                    </div>
+                </div>
+            </div>
+			 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                <div class="speakers">
+                    <div class="spk-img">
+                        <img class="img-fluid" src="images/team/Jan_Landin.jpg" alt="Jan_Landin" />
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-camera"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-life-ring"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="spk-info">
+                        <h3>Co-Owner</h3>
+                        <p>Expert PLM Consultant</p>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        <!-- /row end-->
+    </div>
+    <!-- /container end-->
+</div>
+</section>
+<div class="section-divider">
+    <hr class="animated-hr" />
+</div>
+<section id="plm-tools" class="py-5 bg-light">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="text-center mb-5">Mastery in PLM Tools</h2>
+                <p class="text-muted mt-3">
+                    Altegra Consulting is dedicated to providing specialized solutions for the leading PLM platforms, delivering innovation, efficiency, and tailored strategies to meet your business needs.
+                </p>
+            </div>
+        </div>
+        <!-- Cards Row -->
+        <div class="row mt-5 g-4">
+            <!-- Aras Innovator -->
+            <div class="col-md-4">
+                <div class="card text-center p-4 shadow-sm border-0">
+                    <img src="images/aras_logo.png" alt="Aras Innovator" class="img-fluid mx-auto mb-3" style="max-width: 150px;">
+                    <h4 class="fw-bold">Aras Innovator</h4>
+                    <hr class="mx-auto" style="width: 50px; border: 2px solid #007bff;">
+                    <p>
+                        We specialize in optimizing Aras Innovator, enhancing its functionality, and delivering tailored solutions to drive innovation and efficiency for your business.
+                    </p>
+                    <a href="#" class="text-primary">Read More →</a>
+
+                </div>
+            </div>
+            <!-- Siemens Teamcenter -->
+            <div class="col-md-4">
+                <div class="card text-center p-4 shadow-sm border-0">
+                    <img src="images/siemens_logo.png" alt="Siemens Teamcenter" class="img-fluid mx-auto mb-3" style="max-width: 150px;">
+                    <h4 class="fw-bold">Siemens Teamcenter</h4>
+                    <hr class="mx-auto" style="width: 50px; border: 2px solid #28a745;">
+                    <p>
+                        For Siemens Teamcenter, we offer specialized solutions, enhancing its capabilities to streamline your product lifecycle management and drive efficiency and innovation.
+                    </p>
+                   <a href="#" class="text-primary">Read More →</a>
+
+                </div>
+            </div>
+            <!-- 3DEXPERIENCE -->
+            <div class="col-md-4">
+                <div class="card text-center p-4 shadow-sm border-0">
+                    <img src="images/3dexperience_logo.png" alt="3DEXPERIENCE" class="img-fluid mx-auto mb-3" style="max-width: 150px;">
+                    <h4 class="fw-bold">3DEXPERIENCE</h4>
+                    <hr class="mx-auto" style="width: 50px; border: 2px solid #17a2b8;">
+                    <p>
+                        Unlock the power of Dassault Systèmes’ 3DEXPERIENCE platform with our expertise in integrating, customizing, and optimizing it for seamless collaboration and innovation.
+                    </p>
+                   <a href="#" class="text-primary">Read More →</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="section-divider">
+    <hr class="animated-hr" />
+</div>
+<section id="contact-us" class="py-5 bg-white">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="row mb-4">
+            <div class="col-md-12 text-center">
+                <h2 class="text-center mb-5">Contact Us</h2>
+                <p class="text-muted">
+                    We’d love to hear from you! Reach out to us for any inquiries or to discuss how we can assist you.
+                </p>
+            </div>
+        </div>
+        <div class="row align-items-center g-4">
+            <!-- Map Section -->
+            <div class="col-md-5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2113.0000000000005!2d17.94420311730098!3d59.4016994652531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0000000000000000!2zMTY0IDQwIEtpc3RhLCBTd2VkZW4!5e0!3m2!1sen!2sus!4v1234567890"
+                    width="100%"
+                    height="350"
+                    style="border: 0; border-radius: 8px;"
+                    allowfullscreen=""
+                    loading="lazy"
+                ></iframe>
+            </div>
+            <!-- Divider -->
+            <div class="col-md-1 d-flex justify-content-center">
+                <div class="vertical-divider"></div>
+            </div>
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <div class="p-4 shadow-sm border rounded bg-white">
+                    <h4 class="mb-4">Get in Touch</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="text-center mb-4">Our Client References</h2>
+                <p class="text-muted">Hear from the companies we've partnered with and the successes we've achieved together.</p>
+            </div>
+        </div>
+        <!-- Testimonials Slider -->
+        <div id="testimonialCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Testimonial 1 -->
+                <div class="carousel-item active text-center">
+                    <img src="images/clients/sandvik_logo.png" alt="Sandvik Mining & Construction" class="mx-auto mb-3" style="max-width: 150px;">
+                    <h4 class="mb-1">Sandvik Mining & Construction</h4>
+                    <p class="text-muted">Data Migration Experts</p>
+                    <blockquote class="blockquote">
+                        <p>
+                            Migration of PDM and CAD data (PRO/Intralink, Windchill, and other legacy systems) to Teamcenter, along with multiple Teamcenter customizations and data model architecture enhancements.
+                        </p>
+                    </blockquote>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="carousel-item text-center">
+                    <img src="images/clients/saab_logo.png" alt="Saab Aerosystems" class="mx-auto mb-3" style="max-width: 150px;">
+                    <h4 class="mb-1">Saab Aerosystems</h4>
+                    <p class="text-muted">Systems Engineering Innovators</p>
+                    <blockquote class="blockquote">
+                        <p>
+                            Configuration and implementation of Teamcenter for systems engineering, design, configuration, and maintenance planning of military aircraft.
+                        </p>
+                    </blockquote>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="carousel-item text-center">
+                    <img src="images/clients/bae_logo.png" alt="BAE Systems Bofors" class="mx-auto mb-3" style="max-width: 150px;">
+                    <h4 class="mb-1">BAE Systems Bofors</h4>
+                    <p class="text-muted">PDM & Document Management</p>
+                    <blockquote class="blockquote">
+                        <p>
+                            Customization, implementation, and maintenance of PDM and document archive systems for enhanced operational efficiency.
+                        </p>
+                    </blockquote>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="carousel-item text-center">
+                    <img src="images/clients/abb_logo.png" alt="ABB Power Systems" class="mx-auto mb-3" style="max-width: 150px;">
+                    <h4 class="mb-1">ABB Power Systems</h4>
+                    <p class="text-muted">Teamcenter Experts</p>
+                    <blockquote class="blockquote">
+                        <p>
+                            Maintenance and customization of Teamcenter, including upgrades, adjustments, and configuration refinements to ensure seamless operations.
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-arrow prev-icon" aria-hidden="true">&lt;</span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-arrow next-icon" aria-hidden="true">&gt;</span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Logo and Description -->
+            <div class="col-md-4">
+                <h4 class="mb-3">Altegra Consulting AB</h4>
+                <p>
+                    Vår kombinerade kunskap i våra kunders processer och PLM-system ger oss möjligheten att leverera de bästa lösningarna.
+                </p>
+                <div class="social-icons">
+                    <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <!-- Contact Information -->
+			  <div class="col-md-4">
+				<h5 class="mb-3">Kontakta oss</h5>
+				<p class="mb-1">
+					<i class="bi bi-telephone-fill text-primary me-2"></i>+46 (0)XXXXXXX
+				</p>
+				<p class="mb-1">
+					<i class="bi bi-envelope-fill text-primary me-2"></i>info@altegra.se
+				</p>
+				<p class="mb-3">
+					<i class="bi bi-envelope-fill text-primary me-2"></i>careers@altegra.se
+				</p>
+				<p>
+					<i class="bi bi-geo-alt-fill text-primary me-2"></i>Jan Stenbecks Torg 17<br>
+					164 40 Kista, Sweden
+				</p>
+			</div>
+
+
+            <!-- Menu Links -->
+            <div class="col-md-4">
+                <h5 class="mb-3">Meny</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">Hem</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Vad är PLM?</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Affärsområden</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Om oss</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Kontakt</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Lediga jobb</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col text-center">
+                <p class="mb-0">&copy; 2024 Altegra Consulting AB. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

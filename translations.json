@@ -1,0 +1,30 @@
+{
+    "en": {
+        "welcomeTitle": "Welcome to Altegra Consulting AB",
+        "welcomeText": "Empowering Your PLM Solutions",
+        "servicesTitle": "Our Services",
+        "servicesContent": [
+            "Specification, customization, and implementation of PLM solutions.",
+            "Integration and communication with adjacent systems.",
+            "Data migration from various PLM systems or other sources.",
+            "System upgrades and enhancements.",
+            "Management and support for installed PLM solutions."
+        ],
+        "aboutUs": "At Altegra Consulting AB, we specialize in providing expert PLM consulting services to empower businesses in achieving their goals.",
+        "contactUs": "Contact Us"
+    },
+    "sv": {
+        "welcomeTitle": "Välkommen till Altegra Consulting AB",
+        "welcomeText": "Stärker dina PLM-lösningar",
+        "servicesTitle": "Våra Tjänster",
+        "servicesContent": [
+            "Specifikation, anpassning och implementering av PLM-lösningar.",
+            "Integration och kommunikation med angränsande system.",
+            "Migrering av data från olika PLM-system eller andra källor.",
+            "Uppgraderingar och förbättringar av system.",
+            "Förvaltning och support för installerade PLM-lösningar."
+        ],
+        "aboutUs": "På Altegra Consulting AB specialiserar vi oss på att erbjuda expertkonsulttjänster inom PLM för att hjälpa företag att nå sina mål.",
+        "contactUs": "Kontakta Oss"
+    }
+}
