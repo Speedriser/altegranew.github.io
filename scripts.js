@@ -109,46 +109,45 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-	const blogURL = "https://api.allorigins.win/get?url=" + encodeURIComponent("https://go4businesstoday.blogspot.com/feeds/posts/default?alt=json");
-	const blogContainer = document.getElementById("blog-container");
+    const blogURL = "https://api.allorigins.win/get?url=" + encodeURIComponent("https://go4businesstoday.blogspot.com/feeds/posts/default?alt=json");
+    const blogContainer = document.getElementById("blog-container");
 
-	// Fetch blog feed using Fetch API
-	fetch(blogURL)
-		.then(response => {
-			if (!response.ok) {
-				throw new Error("Network response was not ok");
-			}
-			return response.json();
-		})
-		.then(data => {
-			debugger;
-			const posts = data.feed.entry;
+    fetch(blogURL)
+        .then(response => response.json())
+        .then(data => {
+            // Parse the 'contents' property into a JSON object
+            const parsedData = JSON.parse(data.contents);
+            const posts = parsedData.feed.entry;
 
-			// Display the latest 6 posts
-			posts.slice(0, 6).forEach(post => {
-				const title = post.title.$t;
-				const link = post.link.find(l => l.rel === "alternate").href;
-				const summary = post.summary ? post.summary.$t : "No summary available";
+            // Check if posts exist
+            if (!posts) {
+                throw new Error("No blog posts found.");
+            }
 
-				// Create blog card HTML
-				const blogCard = document.createElement("div");
-				blogCard.className = "col-md-4 mb-4";
-				blogCard.innerHTML = `
-					<div class="card h-100 shadow-sm border-0">
-						<div class="card-body">
-							<h5 class="card-title">${title}</h5>
-							<p class="card-text">${summary.substring(0, 100)}...</p>
-							<a href="${link}" target="_blank" class="btn btn-primary">Read More</a>
-						</div>
-					</div>
-				`;
+            // Display the latest 6 posts
+            posts.slice(0, 6).forEach(post => {
+                const title = post.title.$t;
+                const link = post.link.find(l => l.rel === "alternate").href;
+                const summary = post.summary ? post.summary.$t : "No summary available";
 
-				// Append the blog card to the container
-				blogContainer.appendChild(blogCard);
-			});
-		})
-		.catch(error => {
-			console.error("Error fetching blog feed:", error);
-			blogContainer.innerHTML = "<p class='text-danger'>Unable to load blog posts. Please try again later.</p>";
-		});
+                // Create the blog card dynamically
+                const blogCard = `
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title">${title}</h5>
+                                <p class="card-text">${summary.substring(0, 100)}...</p>
+                                <a href="${link}" target="_blank" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                blogContainer.innerHTML += blogCard;
+            });
+        })
+        .catch(error => {
+            console.error("Error fetching blog posts:", error);
+            blogContainer.innerHTML = "<p class='text-danger'>Unable to load blog posts. Please try again later.</p>";
+        });
 });
+
