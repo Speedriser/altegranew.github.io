@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-	const blogURL = "https://go4businesstoday.blogspot.com/feeds/posts/default?alt=json"; // Replace with your blog URL
+	const blogURL = "https://api.allorigins.win/get?url=" + encodeURIComponent("https://go4businesstoday.blogspot.com/feeds/posts/default?alt=json");
 	const blogContainer = document.getElementById("blog-container");
 
 	// Fetch blog feed using Fetch API
