@@ -121,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			return response.json();
 		})
 		.then(data => {
+			debugger;
 			const posts = data.feed.entry;
 
 			// Display the latest 6 posts
