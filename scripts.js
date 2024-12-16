@@ -107,3 +107,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
     observer.observe(plmImage);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+	const blogURL = "https://go4businesstoday.blogspot.com/feeds/posts/default?alt=json"; // Replace with your blog URL
+	const blogContainer = document.getElementById("blog-container");
+
+	// Fetch blog feed using Fetch API
+	fetch(blogURL)
+		.then(response => {
+			if (!response.ok) {
+				throw new Error("Network response was not ok");
+			}
+			return response.json();
+		})
+		.then(data => {
+			const posts = data.feed.entry;
+
+			// Display the latest 6 posts
+			posts.slice(0, 6).forEach(post => {
+				const title = post.title.$t;
+				const link = post.link.find(l => l.rel === "alternate").href;
+				const summary = post.summary ? post.summary.$t : "No summary available";
+
+				// Create blog card HTML
+				const blogCard = document.createElement("div");
+				blogCard.className = "col-md-4 mb-4";
+				blogCard.innerHTML = `
+					<div class="card h-100 shadow-sm border-0">
+						<div class="card-body">
+							<h5 class="card-title">${title}</h5>
+							<p class="card-text">${summary.substring(0, 100)}...</p>
+							<a href="${link}" target="_blank" class="btn btn-primary">Read More</a>
+						</div>
+					</div>
+				`;
+
+				// Append the blog card to the container
+				blogContainer.appendChild(blogCard);
+			});
+		})
+		.catch(error => {
+			console.error("Error fetching blog feed:", error);
+			blogContainer.innerHTML = "<p class='text-danger'>Unable to load blog posts. Please try again later.</p>";
+		});
+});
